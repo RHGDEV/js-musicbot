@@ -1,12 +1,11 @@
 const Discord = require('discord.js'),
-util = require('util'),
 YTDL = require("ytdl-core"),
 FFMPEG = require("ffmpeg"),
 YouTube = require('simple-youtube-api'),
 YTapi = new YouTube(process.env.ytapikey ? process.env.ytapikey : require("./config.json").ytapikey);
 prefix = process.env.prefix ? process.env.prefix : require("./config.json").prefix,
 bot = new Discord.Client({
-  messageCacheMaxSize: 100,
+  messageCacheMaxSize: 10,
   messageCacheLifetime: 0,
   messageSweepInterval: 2600,
   disableEveryone: true,
@@ -24,7 +23,7 @@ bot = new Discord.Client({
 console.log(process.pid);
 bot.on(`ready`, () => {
 	console.log(`${bot.user.username} ready!`)
-	bot.user.setActivity(`${prefix}music`, { type: "listening", url: "https://www.twitch.tv/twitch" });
+	bot.user.setActivity(`Music | ${prefix}`, { type: "streaming", url: "https://www.twitch.tv/twitch" });
 });
 process.on('unhandledRejection', console.error);
 bot.login(process.env.token ? process.env.token : require("./config.json").token);
