@@ -167,7 +167,7 @@ bot.on(`message`, (message) => {
         .setColor("0x36393E")
         .setAuthor(`${bot.user.username}`)
 		.setFooter(`Help`, bot.user.avatarURL)
-        .setDescription("Fine I'm a simple musicbot by RHG#0822 and Corey6945#0001 *that's only about 300 lines.*")
+        .setDescription("Fine I'm a simple musicbot by RHG#0822 *that's only about 300 lines.*")
         .addField(`${prefix}help`, `Sends this message.`)
         .addField(`${prefix}play [link|search|playlist]`, `Plays a song in the current channel.`)
         .addField(`${prefix}skip`, `Skips the current song.`)
