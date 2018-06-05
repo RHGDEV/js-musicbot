@@ -70,7 +70,7 @@ function play(connect, msg, bot) {
       .setFooter(`Requester: ${server.queueMessages[0].author.tag}`, server.queueMessages[0].author.avatarURL);
 
     msg.channel.send({ embed: em }).then(m => m.delete(50000));
-	server.dispatcher = msg.guild.voiceConnection.playStream(YTDL(server.queueList[0], { audioonly: true }), { passes: process.env.passes});
+	server.dispatcher = msg.guild.voiceConnection.playStream(YTDL(server.queueList[0], { audioonly: true }), { passes: process.env.passes ? process.env.passes : require("./config.json").passes});
    // passes -- can be increased to reduce packetloss at the expense of upload bandwidth, 4-5 should be lossless at the expense of 4-5x upload
 
     server.dispatcher.on("end", (reason) => {
