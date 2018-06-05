@@ -1,4 +1,8 @@
 # js-musicbot
+wow
+### Features
+This bot can do almost anything musci wise.
+It can lookup songs and make choices, or take songs from a playlist and add them, or take a youtube url and play it, with simple controls like skip and stop.
 
 ### SETUP
 I have all the files you need you can simply push to heroku and make some Config Vars under (Settings >> Config Vars)
@@ -7,7 +11,7 @@ or if you wanna run it on a raspberry pi you can with the *config.json.example* 
 token - This will be the token for your bot
 ytapikey - This will be the token you can make [here](https://console.developers.google.com/?pli=1)
 prefix - Prefix for the bot
-passes - This can be a number 1 - 10, but usally 4 or 5 does best
+passes - Can be increased to reduce packetloss at the expense of upload bandwidth, 4-5 should be lossless at the expense of 4-5x upload
 
 ##### How to make a yt api token
 1 - Make a new project
