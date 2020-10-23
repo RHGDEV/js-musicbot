@@ -1,0 +1,6 @@
+{
+  "name": "js-musicbot",
+  "description": "🤖 Simple JavaScript music bot that is ready for hosting on nearly any platform!",
+  "repository": "https://github.com/RHGDEV/js-musicbot/",
+  "keywords": ["discord", "discordjs", "music", "bot"]
+}
