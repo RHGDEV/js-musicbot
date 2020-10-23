@@ -1,6 +1,11 @@
 # js-musicbot
 wow
 
+### Deploy
+[![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RHGDEV/js-musicbot)
+
+[![Repl.it Deploy](https://repl.it/badge/github/RHGDEV/js-musicbot)](https://repl.it/github/RHGDEV/js-musicbot)
+
 ### Features
 This bot can do almost anything musci wise.
 It can lookup songs and make choices, or take songs from a playlist and add them, or take a youtube url and play it, with simple controls like skip and stop.
