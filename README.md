@@ -1,5 +1,9 @@
+# Archive
+Still using this? Congrats you know how to update stuff. 
+Otherwise this code will serve no use for people who are looking for a free bot that they can host instantly.
+This is one `discord.js v11` and hopefully you know that's a good year+ outdated.
+
 # 🤖 js-musicbot
-wow
 
 ## 🔎 Deploy Links
 [![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RHGDEV/js-musicbot)
